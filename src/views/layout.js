@@ -1,11 +1,26 @@
 module.exports = ({ title, body }) => `
-<!DOCTYPE html>
-<html>
-<head>
-<title>${title}</title>
-</head>
-<body>
-${body}
-</body>
-</html>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+      />
+
+      <title>${title}</title>
+
+      <link
+        rel="stylesheet"
+        href="/css/main.css"
+      />
+    </head>
+
+    <body>
+      <main class="container">
+        ${body}
+      </main>
+    </body>
+  </html>
 `;
